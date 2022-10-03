@@ -37,7 +37,7 @@ kelas
             <table class="table table-hover text-nowrap" style="width: 100%">
                 <thead>
                     <th>No.</th>
-                    <th>Nama</th>
+                    <th>Kelas</th>
                     <th>Aksi</th>
                 </thead>
                 @foreach ($kelas as $item)

@@ -22,7 +22,11 @@ Route::get('/', function () {
     return view('layout.app');
 });
 
+//route guru
+Route::get('/guru/data', [GuruController::class, 'data'])->name('guru.data');
 Route::resource('/guru', GuruController::class);
+Route::get('/guru/edit/{id}', [GuruController::class, 'edit']);
+Route::get('/guru/hapus/{id}', [GuruController::class, 'destroy']);
 
 //route Kelas
 Route::get('/kelas/data', [KelasController::class, 'data'])->name('kelas.data');

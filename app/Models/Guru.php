@@ -12,4 +12,8 @@ class Guru extends Model
     protected $table = 'guru';
 
     protected $guarded = [];
+
+    public function mapel(){
+        return $this->belongsTo(Mapel::class);
+    }
 }

@@ -20,7 +20,7 @@ class KelasController extends Controller
     }
 
     public function data(){
-        $kelas = Kelas::orderBy('id', 'desc')->get();
+        $kelas = Kelas::orderBy('id', 'asc')->get();
 
         return datatables()
             ->of($kelas)
