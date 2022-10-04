@@ -13,8 +13,8 @@
                 <form action="" method="POST">
                     @csrf
                     @method('PUT')
-
                     <div class="form-group">
+                        
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama">
                     </div>

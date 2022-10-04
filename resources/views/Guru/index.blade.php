@@ -29,7 +29,9 @@ guru
             <div class="card-tools">
                 </button>
                 <button type="button" onclick="addForm('{{route('guru.store')}}')" class="btn btn-tool">
+                <div class="btn btn-sm btn-primary shadow-sm rounded-pill" style="width: 95px;">
                     <i class="fas fa-plus"></i>
+                </div>
                 </button>
             </div>
         </div>

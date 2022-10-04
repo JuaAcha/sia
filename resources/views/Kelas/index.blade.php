@@ -29,7 +29,9 @@ kelas
             <div class="card-tools">
                 </button>
                 <button type="button" onclick="addForm('{{route('kelas.store')}}')" class="btn btn-tool">
+                <div class="btn btn-sm btn-primary shadow-sm rounded-pill" style="width: 95px;">
                     <i class="fas fa-plus"></i>
+                </div>
                 </button>
             </div>
         </div>
@@ -112,7 +114,7 @@ kelas
         $('#modalForm').modal('show');
         $('#modalForm .modal-title').text('Tambah Data Kelas');
 
-        $('#modalForm form')[0].reset();
+        // $('#modalForm form')[0].reset();
         $('#modalForm form').attr('action', url);
         $('#modalForm [name=_method]').val('post');
     }

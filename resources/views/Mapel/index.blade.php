@@ -29,7 +29,9 @@ mapel
             <div class="card-tools">
                 </button>
                 <button type="button" onclick="addForm('{{route('mapel.store')}}')" class="btn btn-tool">
+                <div class="btn btn-sm btn-primary shadow-sm rounded-pill" style="width: 95px;">
                     <i class="fas fa-plus"></i>
+                </div>
                 </button>
             </div>
         </div>

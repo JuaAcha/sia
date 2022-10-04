@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Siswa;
 
 class Kelas extends Model
 {
@@ -12,4 +13,8 @@ class Kelas extends Model
     protected $table = 'kelas';
 
     protected $guarded = [];
+
+    public function Siswa(){
+        return $this->hasMany(Siswa::class);
+    }
 }

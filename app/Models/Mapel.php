@@ -14,4 +14,12 @@ class Mapel extends Model
     protected $table = 'mapel';
 
     protected $guarded = [];
+
+    public function Guru(){
+        return $this->hasMany(Guru::class);
+    }
+
+    public function Siswa(){
+        return $this->hasMany(Siswa::class);
+    }
 }
