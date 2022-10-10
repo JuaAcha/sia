@@ -13,7 +13,7 @@
                 <img src="https://github.com/JuaAcha.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">𝐘𝐮𝐧𝐚૮₍ ˃ ⤙ ˂ ₎ა</a>
+                <a href="#" class="d-block">{{Auth()->user()->name}}</a>
             </div>
         </div>
 
@@ -35,7 +35,7 @@
 
                 <li class="nav-header">Dashboard</li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link {{ request()->is('dashboard*') ? 'active' : '' }}">
+                    <a href="{{route('dashboard.index') }}" class="nav-link {{ request()->is('dashboard*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
