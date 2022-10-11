@@ -13,13 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('guru', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama');
-            $table->string('alamat');
-            $table->enum('jenis_kelamin', ['Laki-Laki', 'Perempuan']);
-            $table->integer('mapel_id')->nullable();
-            $table->timestamps();
+        Schema::table('siswa', function (Blueprint $table) {
+            $table->integer('user_id')->after('id');
         });
     }
 
@@ -30,8 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('guru', function (Blueprint $table) {
-            //
+        Schema::table('siswa', function (Blueprint $table) {
+            $table->dropColumn('user_id');
         });
     }
 };

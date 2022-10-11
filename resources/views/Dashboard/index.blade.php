@@ -15,7 +15,7 @@ Dashboard
 </section>
 
 <section class="content">
-
+    @if(auth()->user()->role == 'admin')
     <div class="row">
         <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
@@ -76,6 +76,27 @@ Dashboard
         </div>
 
     </div>
+    @endif
 
+    @if(auth()->user()->role == 'siswa')
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="text-primary">
+                    {{ !empty(auth()->user()->name) ? (auth()->user()->name) : '' }}
+                </h3>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Mata Pelajaran</th>
+                        <th>Guru</th>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    @endif
+</div>
 </section>
 @endsection

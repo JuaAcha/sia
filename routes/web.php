@@ -28,7 +28,7 @@ Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/postlogin', [AuthController::class, 'postlogin'])->name('name.postlogin');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => ['auth', 'checkrole:admin']], function(){
     //Route Dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
     
@@ -52,5 +52,10 @@ Route::group(['middleware' => 'auth'], function(){
     Route::resource('/siswa', SiswaController::class);
     Route::get('/siswa/edit/{id}', [SiswaController::class, 'edit']);
     Route::get('/siswa/hapus/{id}', [SiswaController::class, 'destroy']);
+    Route::get('/siswa/profile/{id}', [SiswaController::class, 'profile'])->name('siswa.profile');
     
+});
+
+Route::group(['middleware' => ['auth', 'checkrole:admin,siswa']], function(){
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 });

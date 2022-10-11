@@ -20,7 +20,8 @@ class UserTableSeeder extends Seeder
             'name' => 'Wellcome JuaBuffy',
             'email' => 'JuaBuffy@gmail.com',
             'password' => bcrypt('password'),
-            'remember_token' => Str::random(20)
+            'remember_token' => Str::random(20),
+            'role' => 'admin'
         ]);
     }
 }

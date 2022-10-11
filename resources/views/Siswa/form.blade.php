@@ -26,6 +26,18 @@
                         @enderror
                     </div>
 
+                    <!-- Add Email -->
+                    <div class="form-group">
+                        <label class="mb-2" for="email">Email</label>
+                        <input type="email" name="email" id="email" value="{{ old('email')}}"
+                            class="form-control @error('email') is-invalid @enderror">
+                        @error('nama')
+                        <div class="text-danger">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+
                     <!--Add Jenis Kelamin-->
                     <div class="form-group">
                         <label for="nama">Jenis Kelamin</label>

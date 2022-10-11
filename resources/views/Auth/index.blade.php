@@ -20,7 +20,7 @@
 
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="#" class="h1"><b>SIA's</b> class</a>
+                <a href="#" class="h1"><b>S I A's</b> class</a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg"><i>Wellcome to SIA's Class</i></p>
