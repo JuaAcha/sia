@@ -30,14 +30,14 @@
                 <div class="card card-primary card-outline">
                     <div class="card-body box-profile">
                         <div class="text-center">
-                            <img class="profile-user-img img-fluid img-circle" src="../../dist/img/user4-128x128.jpg"
+                            <img class="profile-user-img img-fluid img-circle" src="https://github.com/JuaAcha.png"
                                 alt="User profile picture">
                         </div>
-                        <h3 class="profile-username text-center">Nina Mcintire</h3>
-                        <p class="text-muted text-center">Software Engineer</p>
+                        <h3 class="profile-username text-center">Buffy's</h3>
+                        <p class="text-muted text-center">Junior Programer</p>
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                                <b>Followers</b> <a class="float-right">1,322</a>
+                                <b>Followers</b> <a class="float-right">5,000</a>
                             </li>
                             <li class="list-group-item">
                                 <b>Following</b> <a class="float-right">543</a>
@@ -60,24 +60,24 @@
                     <div class="card-body">
                         <strong><i class="fas fa-book mr-1"></i> Education</strong>
                         <p class="text-muted">
-                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                            SMK Antartika 1 Sidoarjo
                         </p>
                         <hr>
                         <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-                        <p class="text-muted">Malibu, California</p>
+                        <p class="text-muted">Indonesia, Jawa Timur</p>
                         <hr>
                         <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
                         <p class="text-muted">
-                            <span class="tag tag-danger">UI Design</span>
-                            <span class="tag tag-success">Coding</span>
-                            <span class="tag tag-info">Javascript</span>
-                            <span class="tag tag-warning">PHP</span>
-                            <span class="tag tag-primary">Node.js</span>
+                            <span class="tag tag-danger">UI Design,</span>
+                            <span class="tag tag-success">Coding,</span>
+                            <span class="tag tag-info">Javascript,</span>
+                            <span class="tag tag-warning">Laravel,</span>
+                            <span class="tag tag-primary">Java</span>
                         </p>
                         <hr>
                         <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum
-                            enim neque.</p>
+                        <p class="text-muted">Buffy's Lover
+                            </p>
                     </div>
 
                 </div>
