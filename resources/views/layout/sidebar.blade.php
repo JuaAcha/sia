@@ -44,7 +44,7 @@
                     </a>
                 </li>
 
-                @if(auth()->user()->role == 'admin')
+                @if(!empty (auth()->user()->role == 'admin') ? auth()->user()->role == 'admin' : '')
                 <li class="nav-header">Master</li>
                 <li class="nav-item">
                     <a href="{{route('guru.index') }}" class="nav-link {{ request()->is('guru*') ? 'active' : '' }}">

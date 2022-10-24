@@ -30,7 +30,7 @@ class SiswaController extends Controller
 
     public function data()
     {
-        $siswa = siswa::orderBy('id', 'desc')->get();
+        $siswa = siswa::orderBy('id', 'asc')->get();
 
         return datatables()
             ->of($siswa)
